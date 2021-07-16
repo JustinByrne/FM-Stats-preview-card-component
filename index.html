@@ -3,27 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Stats preview card component</title>
-
   <link href="./tailwind.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
 </head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="bg-darkBlue">
+  <div class="relative px-8 py-24 flex justify-center h-auto">
+    <div class="bg-desaturatedBlue text-white rounded-lg overflow-hidden w-full">
+      <div class="relative">
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-accent mix-blend-multiply"></div>
+        <img class="" src="./images/image-header-mobile.jpg">
+      </div>
+      <div class="flex flex-col space-y-4 px-7 py-10">
+        <h1 class="text-2xl font-bold text-center font-inter">
+          Get <span class="text-accent">insights</span> that help your business grow.
+        </h1>
+      
+        <div class="font-inter text-center text-white/75 text-sm">
+          Discover the benefits of data
+          analytics and make better decisions
+          regarding revenue, customer
+          experience, and overall efficiency.
+        </div>
+      
+        <div class="grid grid-cols-1 gap-4">
+          <div class="flex flex-col text-center">
+            <p class="font-inter font-bold text-lg">
+              10k+
+            </p>
+            <p class="text-white/60 uppercase text-xs font-inter">
+              companies
+            </p>
+          </div>
+          <div class="flex flex-col text-center">
+            <p class="font-inter font-bold text-lg">
+              314
+            </p>
+            <p class="text-white/60 uppercase text-xs font-inter">
+              templates
+            </p>
+          </div>
+          <div class="flex flex-col text-center">
+            <p class="font-inter font-bold text-lg">
+              12m+
+            </p>
+            <p class="text-white/60 uppercase text-xs font-inter">
+              queries
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Justin Byrne</a>.
+    </div> -->
   </div>
 </body>
 </html>
