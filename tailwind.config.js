@@ -5,7 +5,18 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: 'Inter, sans-serif',
+        deca: 'Lexend Deca, sans-serif',
+
+      },
+      colors: {
+        darkBlue: "hsl(233, 47%, 7%)",
+        desaturatedBlue: "hsl(244, 38%, 16%)",
+        accent: "hsl(277, 64%, 61%)",
+      },
+    },
   },
   variants: {
     extend: {},
