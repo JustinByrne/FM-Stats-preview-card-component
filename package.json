@@ -10,7 +10,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx tailwindcss -i ./src/tailwind.css -o ./tailwind.css --watch",
+    "watch": "concurrently \"npm:watch-tailwind\" \"npm:watch-browser\"",
+    "watch-browser": "browser-sync -w  --files \"./*.css\"",
+    "watch-tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./tailwind.css --watch",
     "build": "NODE_ENV=production npx tailwindcss -i ./src/tailwind.css -o ./tailwind.css --minify"
   },
   "repository": {
@@ -23,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/JustinByrne/FM-Stats-preview-card-component/issues"
   },
-  "homepage": "https://github.com/JustinByrne/FM-Stats-preview-card-component#readme"
+  "homepage": "https://github.com/JustinByrne/FM-Stats-preview-card-component#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.4",
+    "concurrently": "^6.2.0"
+  }
 }
