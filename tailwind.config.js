@@ -6,6 +6,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontSize: {
+        'smr': '0.9rem',
+        '2.5xl': '1.7rem',
+      },
       fontFamily: {
         inter: 'Inter, sans-serif',
         deca: 'Lexend Deca, sans-serif',
