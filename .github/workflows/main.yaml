@@ -8,7 +8,6 @@ on:
       - main
 jobs:
   building:
-    needs: testing
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,7 +16,7 @@ jobs:
       - name: Compile assets
         run: npm run build
   deploy:
-    needs: [testing, building]
+    needs: building
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
